@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #dedede;
+    font-size: 16px;
+}
+
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .corpo_calculadora {
+        width: 320px;
+        height: 410px;
+        background: #201f1f;
+        border-radius: 30px;
+        box-shadow: 10px 10px 10px #000;
+    }
+
+    & .view_resultado {
+        width: 80%;
+        height: 35px;
+        margin: 30px;
+        border-radius: 5px;
+        background-color: #fff;
+        text-align: right;
+    }
+
+    & .view_resultado::placeholder {
+        color: #49be25;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    & .botoes {
+        width: 95%;
+        margin-left: 25px;
+    }
+
+    & .row {
+        display: inline-block;
+        width: 90%;
+        height: 55px;
+        margin: auto;
+        align-items: center;
+    }
+
+    & .btn {
+        width: 64px;
+        height: 100%;
+        box-shadow: 1px 1px 1px #ffffff;
+        border-radius: 5px;
+        background: #6b6868;
+        font-size: 18px;
+    }
+
+    & .limpar {
+        width: 132px;
+        height: 100%;
+        border-radius: 5px;
+        font-size: 18px;
+        box-shadow: 1px 1px 1px #ffffff;
+        background: #6b6868 ;
+    }
+
+    & .igual {
+        width: 63px;
+        height: 110px;
+        border-radius: 5px;
+        font-size: 18px;
+        box-shadow: 1px 1px 1px #ffffff;
+        background: #6b6868;
+    }
+
+    & .clear {
+        clear: both;
+    }
+}
+
+.btn:hover {
+    background: #201f1f;
+}
+
+.limpar:hover {
+    background: #201f1f;
+}
+
+.igual:hover {
+    background: #201f1f;
+}
+
+
+footer {
+
+    & p {
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        margin-top: 5px;
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+
+a {
+    font-size: 14px;
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.flutuar {
+    float: right;
+    margin-top: -55px;
+    margin-right: 6px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon/calculadora.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="corpo_calculadora">
+
+            <input id="visor" type="text" placeholder="0" disabled="disabled" id="result" class="view_resultado">
+
+            <div class="botoes">
+                <div class="row">
+                    <button onclick="calcular('acao', 'c')" type="button" class="limpar">C</button>
+                    <button onclick="calcular('acao', '/')" type="button" class="btn">/</button>
+                    <button onclick="calcular('acao', '*')" type="button" class="btn">x</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="calcular('valor', 7 )" type="button" class="btn">7</button>
+                    <button onclick="calcular('valor', 8 )" type="button" class="btn">8</button>
+                    <button onclick="calcular('valor', 9 )" type="button" class="btn">9</button>
+                    <button onclick="calcular('acao', '-')" type="button" class="btn">-</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="calcular('valor', 4 )" type="button" class="btn">4</button>
+                    <button onclick="calcular('valor', 5 )" type="button" class="btn">5</button>
+                    <button onclick="calcular('valor', 6 )" type="button" class="btn">6</button>
+                    <button onclick="calcular('acao', '+')" type="button" class="btn">+</button>
+
+                </div>
+
+                <div class="row">
+                    <button onclick="calcular('valor', 1 )" type="button" class="btn">1</button>
+                    <button onclick="calcular('valor', 2 )" type="button" class="btn">2</button>
+                    <button onclick="calcular('valor', 3 )" type="button" class="btn">3</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="calcular('acao', '=')" type="button" class="igual flutuar">=</button>
+                    <button onclick="calcular('valor', 0)" type="button" class="limpar">0</button>
+                    <button onclick="calcular('acao', '.' )" type="button" class="btn">.</button>
+                </div>
+                    
+            </div>
+            <footer>
+                <p>Desenvolvido por <a href="https://www.instagram.com/ismael.rdg" target="_blank">Ismael Rodrigues</a>
+                </p>
+            </footer>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
